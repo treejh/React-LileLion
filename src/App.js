@@ -1,3 +1,4 @@
+import BoardList from "./Board/BoardList";
 import ChildrenExam from "./component/ChildrenExample";
 import Counter from "./Counter";
 import Hello from "./Hello";
@@ -42,6 +43,8 @@ function App() {
   {/* UseRef 실습*/}
 <br></br><br></br>
 <RefMyInputBox></RefMyInputBox>
+<br></br><br></br>
+<BoardList></BoardList>
 
 
 </div>
