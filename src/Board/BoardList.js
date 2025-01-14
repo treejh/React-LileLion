@@ -26,8 +26,7 @@ const boardList = [
 
   const BoardList = () => {
 
-    //id 기준으로 오름차순 정렬을 하고 싶다면 
-    //const sortedBoardList = [...boardList].sort((a, b) => a.id - b.id);
+    const sortedBoardList = [...boardList].sort((a,b)=>a.id-b.id);
     return (
       <table border="1">
         <caption>게시판 목록</caption>
@@ -42,7 +41,7 @@ const boardList = [
         </thead>
         <tbody>
 {
-    boardList.map((board) => (
+    sortedBoardList.map((board) => (
       <Board
       key={board.id}
       id={board.id}

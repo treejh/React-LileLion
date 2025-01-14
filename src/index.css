@@ -13,9 +13,11 @@ code {
 }
 
 .card {
-  background-color: rgb(175, 160, 160);
+  background-color: white(175, 160, 160);
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   width: 20rem;
 }
+
+
