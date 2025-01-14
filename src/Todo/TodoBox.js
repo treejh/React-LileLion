@@ -11,7 +11,7 @@ const TodoBox=()=>{
     ])
 
     //const id = useRef(todoList.length + 1);
-    const id = userRef(Math.max(...todoList.map((todo)=>todo.id))+1);
+    const id = useRef(Math.max(...todoList.map((todo)=>todo.id))+1);
 
     const addTodoList=(title)=>{
         console.log(title);
