@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Todo=({todo,deleteHandler,updateHandler })=>{
    
@@ -6,8 +6,17 @@ const Todo=({todo,deleteHandler,updateHandler })=>{
     const deleteHandler=()=>{
         deleteHandler(todo,id)
     }*/
+
    const [updateMode,setUpdateMode] = useState(false);
    const [title, setTitle] = useState(todo.title);
+
+   useEffect(()=>{
+    console.log("ToDo 컴포넌트가 화면에 나타난다. mount !!  "+todo.title);
+
+    return()=>{
+        console.log("Todo 컴포넌트가 화면에서 사라진다. unmount !! "+todo.title);
+    }
+   },[todo]);
 
    const updateModelHandler=()=>{
         setUpdateMode(true);
@@ -30,7 +39,6 @@ const Todo=({todo,deleteHandler,updateHandler })=>{
     </>
     );
    }else{
-
     return(
         <>
         {todo.title}&nbsp;

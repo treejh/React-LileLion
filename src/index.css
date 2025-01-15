@@ -13,11 +13,34 @@ code {
 }
 
 .card {
-  background-color: white(175, 160, 160);
+  background-color: white;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   width: 20rem;
+  margin-left: 100px;
+  margin-top: 80px;
+  text-align: center;
 }
+
+.input-text{
+  width: 300px; 
+  height: 20px; 
+  padding: 10px; 
+}
+
+
+body{
+  background-color: aliceblue;
+}
+
+.card-container {
+  display: flex;
+  justify-content: flex-start;  /* 카드들이 왼쪽에 정렬되게 설정 */
+  gap: 20px;  /* 카드 사이의 간격을 20px로 설정 */
+  flex-wrap: wrap;  /* 카드가 너무 많으면 자동으로 줄바꿈 */
+  padding: 20px;
+}
+
 
 

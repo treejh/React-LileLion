@@ -14,6 +14,7 @@ const TodoInput=({addTodo})=>{
             e.target.focus();
             
         }
+
     };
 
     return(
