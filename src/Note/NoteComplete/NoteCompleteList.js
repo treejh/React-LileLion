@@ -1,17 +1,19 @@
-import NoteComplete from "./NoteComplete";
+import NoteCompleteA from "./NoteCompleteA";
 
 
-const NoteCompleteList =({noteList}) =>{
+
+const NoteCompleteList =({noteList, changeState,deleteHandler}) =>{
 return(
     <ul>
         {noteList.map((note)=>(
             <li key={note.id}>
-                <NoteComplete note={note}></NoteComplete>
+                <NoteCompleteA note={note} 
+                changeState={changeState}
+                deleteHandler={deleteHandler}/>
             </li>
         )
     )
     }
-
     </ul>
 );
 

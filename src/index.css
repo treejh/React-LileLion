@@ -36,9 +36,8 @@ body{
 
 .card-container {
   display: flex;
-  justify-content: flex-start;  /* 카드들이 왼쪽에 정렬되게 설정 */
-  gap: 20px;  /* 카드 사이의 간격을 20px로 설정 */
-  flex-wrap: wrap;  /* 카드가 너무 많으면 자동으로 줄바꿈 */
+  justify-content: flex-start; 
+  gap: 20px; 
   padding: 20px;
 }
 
